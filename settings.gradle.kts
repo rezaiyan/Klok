@@ -15,4 +15,5 @@ dependencyResolutionManagement {
 
 rootProject.name = "Klok"
 include(":app")
-include(":clock") 
+include(":clock")
+include(":widget")

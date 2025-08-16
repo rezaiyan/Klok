@@ -31,7 +31,8 @@ klok/
 - **Real-time Updates**: The clock updates every second to show current time
 - **Material Design 3**: Uses modern Material Design components and theming
 - **Dialog Presentation**: Clock is displayed in an elegant dialog
-- **Modular Architecture**: Clock is implemented as a separate module for reusability
+- **Glance Widget**: A glanceable home screen widget that shows the current time
+- **Modular Architecture**: Clock and widget are implemented as separate modules for reusability
 
 ## Clock Module Components
 
@@ -49,6 +50,19 @@ The core clock composable that:
 - Calculates and displays time hands
 - Updates every second
 - Uses smooth animations and proper styling
+
+## Widget Module Components
+
+### KlokGlanceWidget
+A glanceable home screen widget that displays:
+- Current time in digital format
+- Current date
+- Clock face representation
+- Automatic updates every minute
+- Material Design 3 theming
+
+### KlokWidgetReceiver
+Handles widget lifecycle events and updates
 
 ## Getting Started
 
@@ -77,6 +91,18 @@ implementation(project(":clock"))
 ClassicClockDialog(
     onDismiss = { /* handle dismiss */ }
 )
+```
+
+### Using the Widget Module
+
+The widget module provides a glanceable home screen widget:
+
+```kotlin
+// Add dependency
+implementation(project(":widget"))
+
+// Widget is automatically available in the app
+// Users can add it from the widget picker
 ```
 
 ## Customization
