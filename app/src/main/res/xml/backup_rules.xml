@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<full-backup-content>
+    <!--
+   Exclude specific files or directories that should not be backed up.
+   For more information, see the topic for the <include> and <exclude> elements
+   at
+   https://developer.android.com/guide/topics/data/autobackup#define-device-conditions
+
+   Note: The following files are automatically excluded for all apps:
+   APK files, shared preference files, and files in directories set by
+   setExternalFilesDir().
+-->
+</full-backup-content> 
